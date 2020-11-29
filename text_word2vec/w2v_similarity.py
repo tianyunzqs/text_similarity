@@ -87,7 +87,7 @@ class TextSimilarity(object):
 
 
 ts = TextSimilarity(
-    word2vec_model_path=os.path.join(project_path, 'dict_models', 'zhwiki_50d.word2vec.gzip'),
+    word2vec_model_path=os.path.join(project_path, 'dict_models', 'sgns.merge.char.gzip'),
     stopwords_path=os.path.join(project_path, 'dict_models', 'stopwords.txt')
 )
 
@@ -101,7 +101,7 @@ def dimension_decomposition(text, dim=2):
 
 
 if __name__ == '__main__':
-    ts = TextSimilarity(word2vec_model_path=r'../dict_models/zhwiki_50d.word2vec.gzip',
+    ts = TextSimilarity(word2vec_model_path=r'../dict_models/sgns.merge.char.gzip',
                         # doc2vec_model_path=r'../dict_models/d2v.model',
                         stopwords_path=r'../dict_models/stopwords.txt')
     # print(ts.sentence_similarity_word2vec('他是一个舞蹈艺术家', '他是一个舞蹈老师'))
